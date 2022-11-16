@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'RobotoSlab-Regular';
+    src: url('../../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoSlab-SemiBold';
+    src: url('../../fonts/RobotoSlab-SemiBold.woff2') format('woff2'),
+        url('../../fonts/RobotoSlab-SemiBold.woff') format('woff'),
+        url('../../fonts/RobotoSlab-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RobotoSlab-Medium';
+    src: url('../../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans-Regular';
+    src: url('../../fonts/IBMPlexSans-Regular.woff2') format('woff2'),
+        url('../../fonts/IBMPlexSans-Regular.woff') format('woff'),
+        url('../../fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBMPlexSans-SemiBold';
+    src: url('../../fonts/IBMPlexSans-SemiBold.woff2') format('woff2'),
+        url('../../fonts/IBMPlexSans-SemiBold.woff') format('woff'),
+        url('../../fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

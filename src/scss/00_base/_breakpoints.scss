@@ -1,0 +1,22 @@
+$mobile-xs: 480px;
+$mobile-sm: 768px;
+
+$mobile-md: 992px;
+
+@mixin mobile-xs() {
+    @media only screen and (max-width: $mobile-xs) {
+        @content;
+    }
+}
+
+@mixin mobile-sm() {
+    @media only screen and (max-width: $mobile-sm) {
+        @content;
+    }
+}
+
+@mixin mobile-md() {
+    @media only screen and (max-width: $mobile-md) {
+        @content;
+    }
+}

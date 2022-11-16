@@ -1,0 +1,166 @@
+.application {
+    display: flex;
+    position: relative;
+    padding-left: 225px;
+
+    @include mobile-sm() {
+        display: block;
+        padding-left: 0;
+    }
+}
+
+.sideBar {
+    max-width: 190px;
+    width: 100%;
+    background-color: $white;
+    padding: 40px 0 40px 35px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+
+    @include mobile-sm() {
+        position: static;
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .logo {
+        img {
+            max-width: 125px;
+        }
+
+        @include mobile-sm() {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .filter-list {
+        align-items: center;
+        display: flex;
+        height: calc(100vh - 80px);
+
+        // height: 100vh;
+        @include mobile-sm() {
+            height: 100%;
+        }
+    }
+}
+
+.blogsComponent {
+    display: flex;
+
+    @include mobile-md() {
+        display: block;
+    }
+}
+
+.blogsList {
+    // background-color: $secondary-bg;
+    // padding: 26px;
+    max-width: 40%;
+    width: 100%;
+
+    @include mobile-md() {
+        max-width: 100%;
+    }
+
+    &.no-data {
+        max-width: 100%;
+
+        .no-datas {
+            display: block;
+        }
+    }
+
+    .no-datas {
+        display: none;
+    }
+}
+
+.search-component {
+    padding: 26px 30px 26px;
+    background-color: $secondary-bg;
+}
+
+.search-item {
+    display: flex;
+
+    @include mobile-xs() {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 288px;
+
+        @include mobile-md() {
+            width: 100%;
+        }
+    }
+
+    .button {
+        margin-left: 16px;
+
+        @include mobile-xs() {
+            margin: 16px auto 0;
+        }
+    }
+}
+
+.blogsList-item {
+    overflow: scroll;
+    height: calc(100vh - 67px);
+    padding: 0 26px 30px;
+    background-color: $secondary-bg;
+
+    @include mobile-md() {
+        height: 480px;
+    }
+
+    @include mobile-sm() {
+        height: 300px;
+    }
+
+}
+
+.blogsView {
+    max-width: 60%;
+    width: 100%;
+    padding: 40px;
+    background-color: $white;
+    box-sizing: border-box;
+
+    @include mobile-md() {
+        max-width: 100%;
+        padding: 20px;
+        // padding-left: 0;
+        // padding-right: 0;
+    }
+
+    .blogs-img {
+        margin-bottom: 24px;
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    .blogs-content {
+        .title {
+            font-size: 1.7rem;
+            font-family: $primary-regular;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: .93rem;
+            font-family: $secondary-regular;
+            line-height: 1.7;
+        }
+    }
+}
